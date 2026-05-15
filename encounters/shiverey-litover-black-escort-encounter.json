@@ -1,0 +1,38 @@
+{
+  "items": [
+    {
+      "h": "aventus_inquisitor_commander_shivcor",
+      "c": "1"
+    },
+    {
+      "h": "sister_mireal_confessor_shivcor",
+      "c": "1"
+    },
+    {
+      "h": "gardek_vayne_the_silent_shield_shivcor",
+      "c": "1"
+    },
+    {
+      "h": "elias_rook_heresy_hunter_shivcor",
+      "c": "1"
+    },
+    {
+      "h": "sevast_kyle_the_lantern_shivcor",
+      "c": "1"
+    }
+  ],
+  "sources": [
+    "SHIVCOR"
+  ],
+  "playersSimple": [
+    {
+      "count": 5,
+      "level": 9,
+      "extraCols": []
+    }
+  ],
+  "colsExtraAdvanced": [],
+  "isAdvanced": false,
+  "name": "Shyverey - Litover Black Escort",
+  "description": "Aventus and the inquisitorial anti-Hero strike team intercept the party during the escape from Litover. Designed for five level 9 PCs as a severe, near-TPK but fair encounter."
+}
