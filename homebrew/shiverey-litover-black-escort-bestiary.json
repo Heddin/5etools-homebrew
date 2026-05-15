@@ -1,0 +1,244 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "SHIVCOR",
+        "abbreviation": "ShivCor",
+        "full": "Shyverey: Litover Black Escort",
+        "authors": ["Heddin", "ChatGPT"],
+        "convertedBy": ["ChatGPT"],
+        "version": "1.0.0"
+      }
+    ],
+    "dateAdded": 20260515,
+    "dateLastModified": 20260515
+  },
+  "monster": [
+    {
+      "name": "Aventus, Inquisitor Commander",
+      "source": "SHIVCOR",
+      "page": 1,
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["human", "cleric", "inquisitor"]},
+      "alignment": ["L", "N"],
+      "ac": [{"ac": 18, "from": ["half plate", "shield"]}],
+      "hp": {"average": 153, "formula": "18d8 + 72"},
+      "speed": {"walk": 30},
+      "str": 14,
+      "dex": 12,
+      "con": 18,
+      "int": 14,
+      "wis": 20,
+      "cha": 16,
+      "save": {"wis": "+9", "cha": "+7", "con": "+8"},
+      "skill": {"insight": "+9", "perception": "+9", "religion": "+6", "persuasion": "+7"},
+      "senses": ["passive Perception 19"],
+      "languages": ["Common", "Celestial", "Dwarvish"],
+      "cr": "10",
+      "trait": [
+        {"name": "Battlefield Director", "entries": ["Aventus has advantage on initiative rolls. Allied creatures from SHIVCOR within 30 feet of him that can hear him gain a +2 bonus to saving throws against being charmed or frightened."]},
+        {"name": "Sanctuary Protocol", "entries": ["Aventus knows the {@spell sanctuary} spell and often casts it on an ally carrying out a critical objective rather than on himself."]}
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": ["Aventus is a 10th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). He requires no material components for his inquisitorial spells."],
+          "spells": {
+            "0": {"spells": ["{@spell guidance}", "{@spell sacred flame}", "{@spell thaumaturgy}"]},
+            "1": {"slots": 4, "spells": ["{@spell command}", "{@spell healing word}", "{@spell sanctuary}"]},
+            "2": {"slots": 3, "spells": ["{@spell hold person}", "{@spell silence}", "{@spell spiritual weapon}"]},
+            "3": {"slots": 3, "spells": ["{@spell counterspell}", "{@spell spirit guardians}"]},
+            "4": {"slots": 3, "spells": ["{@spell banishment}"]},
+            "5": {"slots": 2, "spells": ["{@spell flame strike}"]}
+          },
+          "ability": "wis"
+        }
+      ],
+      "action": [
+        {"name": "Multiattack", "entries": ["Aventus makes two Mace attacks or casts one spell and makes one Mace attack."]},
+        {"name": "Consecrated Mace", "entries": ["{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) bludgeoning damage plus 13 ({@damage 3d8}) radiant damage."]},
+        {"name": "Edict of Submission (Recharge 5-6)", "entries": ["Aventus targets up to three creatures he can see within 60 feet. Each target must succeed on a DC 17 Wisdom saving throw or be unable to take reactions and have its speed halved until the end of Aventus's next turn."]}
+      ],
+      "reaction": [
+        {"name": "You Are Seen", "entries": ["When a creature Aventus can see within 60 feet attempts to hide, turn invisible, or teleport, Aventus forces it to make a DC 17 Wisdom saving throw. On a failure, the attempt still occurs, but the creature is revealed to Aventus and gains no advantage from being unseen against Aventus or one ally of his choice until the end of its next turn."]}
+      ],
+      "legendary": [
+        {"name": "Directive", "entries": ["One ally Aventus can see within 60 feet moves up to half its speed without provoking opportunity attacks or makes one weapon attack."]},
+        {"name": "Rebuke", "entries": ["Aventus targets one creature he can see within 60 feet. The target must succeed on a DC 17 Wisdom saving throw or take 10 ({@damage 3d6}) psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn."]},
+        {"name": "Cast a Spell (Costs 2 Actions)", "entries": ["Aventus casts a spell of 2nd level or lower."]}
+      ],
+      "legendaryActions": 3,
+      "environment": ["urban"],
+      "fluff": {"entries": ["Aventus is not a zealot who shouts. He speaks like a verdict already signed. He believes the Empire can only be saved by controlled obedience."]}
+    },
+    {
+      "name": "Sister Mireal, Confessor",
+      "source": "SHIVCOR",
+      "page": 2,
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["human", "bard", "inquisitor"]},
+      "alignment": ["L", "N"],
+      "ac": [16],
+      "hp": {"average": 110, "formula": "17d8 + 34"},
+      "speed": {"walk": 30},
+      "str": 9,
+      "dex": 16,
+      "con": 14,
+      "int": 14,
+      "wis": 16,
+      "cha": 20,
+      "save": {"dex": "+7", "wis": "+7", "cha": "+9"},
+      "skill": {"deception": "+13", "insight": "+11", "persuasion": "+9", "stealth": "+7"},
+      "senses": ["passive Perception 13"],
+      "languages": ["Common", "Elvish", "Celestial"],
+      "cr": "8",
+      "trait": [
+        {"name": "Soft Voice, Sharp Knife", "entries": ["Mireal has advantage on Charisma checks made to unsettle, interrogate, or manipulate a creature that can hear her."]}
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": ["Mireal is an 8th-level spellcaster. Her spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks)."],
+          "spells": {
+            "0": {"spells": ["{@spell mage hand}", "{@spell minor illusion}", "{@spell vicious mockery}"]},
+            "1": {"slots": 4, "spells": ["{@spell bane}", "{@spell charm person}", "{@spell dissonant whispers}"]},
+            "2": {"slots": 3, "spells": ["{@spell calm emotions}", "{@spell detect thoughts}", "{@spell suggestion}"]},
+            "3": {"slots": 3, "spells": ["{@spell enemies abound}", "{@spell hypnotic pattern}"]},
+            "4": {"slots": 2, "spells": ["{@spell greater invisibility}"]}
+          },
+          "ability": "cha"
+        }
+      ],
+      "action": [
+        {"name": "Psychic Needle", "entries": ["{@atk rw} {@hit 9} to hit, range 60 ft., one target. {@h}18 ({@damage 4d8}) psychic damage, and the target can't take reactions until the start of Mireal's next turn."]},
+        {"name": "Confession (Recharge 5-6)", "entries": ["One creature Mireal can see within 60 feet must make a DC 17 Charisma saving throw. On a failure, the target takes 27 ({@damage 6d8}) psychic damage and is {@condition frightened} of Mireal until the end of its next turn. On a success, it takes half damage and isn't frightened."]}
+      ],
+      "bonus": [
+        {"name": "Unsettling Whisper", "entries": ["Mireal chooses one creature she can see within 60 feet. Until the start of Mireal's next turn, the first saving throw the creature makes is reduced by {@dice 1d6}."]}
+      ],
+      "environment": ["urban"],
+      "fluff": {"entries": ["Sister Mireal speaks gently and remembers the wounds people never named aloud."]}
+    },
+    {
+      "name": "Gardek Vayne, the Silent Shield",
+      "source": "SHIVCOR",
+      "page": 3,
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["human", "paladin", "inquisitor"]},
+      "alignment": ["L", "N"],
+      "ac": [{"ac": 20, "from": ["plate", "shield"]}],
+      "hp": {"average": 145, "formula": "17d8 + 68"},
+      "speed": {"walk": 25},
+      "str": 20,
+      "dex": 10,
+      "con": 18,
+      "int": 10,
+      "wis": 14,
+      "cha": 16,
+      "save": {"str": "+9", "con": "+8", "wis": "+6"},
+      "skill": {"athletics": "+9", "intimidation": "+7", "perception": "+6"},
+      "senses": ["passive Perception 16"],
+      "languages": ["Common", "understands Celestial but never speaks"],
+      "cr": "9",
+      "trait": [
+        {"name": "Vow of Silence", "entries": ["Gardek does not speak. He is immune to effects that require him to speak, and he has advantage on saving throws against being charmed or frightened."]},
+        {"name": "Lockdown Aura", "entries": ["Hostile creatures within 10 feet of Gardek treat the area as difficult terrain."]}
+      ],
+      "action": [
+        {"name": "Multiattack", "entries": ["Gardek makes two Longsword attacks."]},
+        {"name": "Longsword", "entries": ["{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}13 ({@damage 1d8 + 9}) slashing damage, or 14 ({@damage 1d10 + 9}) slashing damage if used with two hands, plus 9 ({@damage 2d8}) radiant damage."]},
+        {"name": "Shield Breaker (Recharge 5-6)", "entries": ["Gardek makes one Longsword attack. On a hit, the target must succeed on a DC 17 Strength saving throw or be knocked {@condition prone} and {@condition restrained} by Gardek's shield until the end of Gardek's next turn."]}
+      ],
+      "reaction": [
+        {"name": "Stand Behind Me", "entries": ["When an ally within 5 feet of Gardek is hit by an attack, Gardek causes the attack to hit him instead."]}
+      ],
+      "environment": ["urban"],
+      "fluff": {"entries": ["Gardek's silence is not serenity. It is a locked gate."]}
+    },
+    {
+      "name": "Elias Rook, Heresy Hunter",
+      "source": "SHIVCOR",
+      "page": 4,
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["human", "ranger", "rogue", "inquisitor"]},
+      "alignment": ["L", "N"],
+      "ac": [17],
+      "hp": {"average": 105, "formula": "19d8 + 19"},
+      "speed": {"walk": 35, "climb": 30},
+      "str": 12,
+      "dex": 20,
+      "con": 13,
+      "int": 14,
+      "wis": 16,
+      "cha": 11,
+      "save": {"dex": "+9", "int": "+6", "wis": "+7"},
+      "skill": {"acrobatics": "+9", "perception": "+11", "stealth": "+13", "survival": "+7"},
+      "senses": ["passive Perception 21"],
+      "languages": ["Common", "Thieves' cant"],
+      "cr": "8",
+      "trait": [
+        {"name": "Former Hero", "entries": ["Elias has studied Academy tactics. He has advantage on Wisdom (Perception) checks to notice hidden creatures and on saving throws against being surprised."]},
+        {"name": "Hunter's Focus", "entries": ["Once on each of his turns, Elias deals an extra 14 ({@damage 4d6}) damage when he hits a creature with a weapon attack and has advantage on the attack roll, or when one of his allies is within 5 feet of the target."]}
+      ],
+      "action": [
+        {"name": "Multiattack", "entries": ["Elias makes two Poisoned Hand Crossbow attacks or two Shortsword attacks."]},
+        {"name": "Poisoned Hand Crossbow", "entries": ["{@atk rw} {@hit 9} to hit, range 30/120 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage plus 10 ({@damage 3d6}) poison damage. The target must succeed on a DC 16 Constitution saving throw or have disadvantage on Constitution saving throws made to maintain concentration until the end of Elias's next turn."]},
+        {"name": "Grappling Wire (Recharge 5-6)", "entries": ["{@atk rw} {@hit 9} to hit, range 30 ft., one Large or smaller target. {@h}12 ({@damage 2d6 + 5}) piercing damage, and the target is pulled up to 20 feet toward Elias and is {@condition grappled} (escape DC 16)."]}
+      ],
+      "bonus": [
+        {"name": "Cunning Action", "entries": ["Elias takes the Dash, Disengage, or Hide action."]}
+      ],
+      "reaction": [
+        {"name": "Mage Harrier", "entries": ["When a creature within 5 feet of Elias casts a spell, Elias makes one Shortsword attack against it."]}
+      ],
+      "environment": ["urban"],
+      "fluff": {"entries": ["Elias once wore an Academy fibula. He now calls it proof that freedom is the easiest mask to weaponize."]}
+    },
+    {
+      "name": "Sevast Kyle, the Lantern",
+      "source": "SHIVCOR",
+      "page": 5,
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["human", "wizard", "inquisitor"]},
+      "alignment": ["L", "N"],
+      "ac": [{"ac": 16, "from": ["mage armor"]}],
+      "hp": {"average": 99, "formula": "18d8 + 18"},
+      "speed": {"walk": 30},
+      "str": 8,
+      "dex": 16,
+      "con": 12,
+      "int": 20,
+      "wis": 14,
+      "cha": 11,
+      "save": {"int": "+9", "wis": "+6"},
+      "skill": {"arcana": "+13", "investigation": "+9", "religion": "+9"},
+      "senses": ["passive Perception 12"],
+      "languages": ["Common", "Celestial", "Draconic"],
+      "cr": "8",
+      "trait": [
+        {"name": "Revealing Lantern", "entries": ["At the start of Sevast's turn, invisible creatures and hidden creatures within 15 feet of him must succeed on a DC 17 Dexterity saving throw or shed dim light until the start of Sevast's next turn, revealing their position."]}
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": ["Sevast is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks)."],
+          "spells": {
+            "0": {"spells": ["{@spell fire bolt}", "{@spell light}", "{@spell prestidigitation}", "{@spell ray of frost}"]},
+            "1": {"slots": 4, "spells": ["{@spell mage armor}", "{@spell magic missile}", "{@spell shield}"]},
+            "2": {"slots": 3, "spells": ["{@spell misty step}", "{@spell scorching ray}", "{@spell see invisibility}"]},
+            "3": {"slots": 3, "spells": ["{@spell counterspell}", "{@spell dispel magic}", "{@spell fireball}"]},
+            "4": {"slots": 3, "spells": ["{@spell dimension door}", "{@spell wall of fire}"]},
+            "5": {"slots": 1, "spells": ["{@spell wall of force}"]}
+          },
+          "ability": "int"
+        }
+      ],
+      "action": [
+        {"name": "Radiant Lance", "entries": ["{@atk rs} {@hit 9} to hit, range 120 ft., one target. {@h}27 ({@damage 6d8}) radiant damage, and the next attack roll made against the target before the end of Sevast's next turn has advantage."]},
+        {"name": "Illumination Burst (Recharge 5-6)", "entries": ["Each hostile creature of Sevast's choice within 20 feet of a point he can see within 90 feet must make a DC 17 Dexterity saving throw, taking 31 ({@damage 7d8}) radiant damage on a failed save, or half as much on a successful one. Creatures that fail the save can't benefit from being invisible until the end of Sevast's next turn."]}
+      ],
+      "environment": ["urban"],
+      "fluff": {"entries": ["Sevast is young enough that his certainty still looks polished. That makes him more dangerous, not less."]}
+    }
+  ]
+}
