@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "h": "grimlock_mm",
+      "c": "8"
+    }
+  ],
+  "sources": [
+    "MM"
+  ],
+  "playersSimple": [
+    {
+      "count": 4,
+      "level": 9,
+      "extraCols": []
+    }
+  ],
+  "colsExtraAdvanced": [],
+  "isAdvanced": false,
+  "name": "Shyverey Underdark 05 - Blind Hunters in an Echo Tunnel",
+  "description": "Low combat/stealth. Grimlocks hunt by sound in a long echoing tunnel. Careful silence can avoid the fight entirely."
+}

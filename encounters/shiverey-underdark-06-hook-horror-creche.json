@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "h": "hook_horror_mm",
+      "c": "2"
+    }
+  ],
+  "sources": [
+    "MM"
+  ],
+  "playersSimple": [
+    {
+      "count": 4,
+      "level": 9,
+      "extraCols": []
+    }
+  ],
+  "colsExtraAdvanced": [],
+  "isAdvanced": false,
+  "name": "Shyverey Underdark 06 - Hook Horror Creche",
+  "description": "Mid combat with a nonlethal option. The hook horrors defend a nest rather than hunt. Animal Handling or Nature can turn combat into a detour."
+}

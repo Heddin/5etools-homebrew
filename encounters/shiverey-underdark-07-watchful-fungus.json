@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "h": "violet_fungus_mm",
+      "c": "4"
+    },
+    {
+      "h": "drow_mm",
+      "c": "2"
+    }
+  ],
+  "sources": [
+    "MM"
+  ],
+  "playersSimple": [
+    {
+      "count": 4,
+      "level": 9,
+      "extraCols": []
+    }
+  ],
+  "colsExtraAdvanced": [],
+  "isAdvanced": false,
+  "name": "Shyverey Underdark 07 - Watchful Fungus",
+  "description": "Low/mid combat. Violet fungi and spore-slave drow bodies react to heat and blood. A hidden path can lead to a ventilation shortcut."
+}

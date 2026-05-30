@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "h": "duergar_mm",
+      "c": "4"
+    }
+  ],
+  "sources": [
+    "MM"
+  ],
+  "playersSimple": [
+    {
+      "count": 4,
+      "level": 9,
+      "extraCols": []
+    }
+  ],
+  "colsExtraAdvanced": [],
+  "isAdvanced": false,
+  "name": "Shyverey Underdark 03 - Duergar Appraisal Patrol",
+  "description": "Mid social/combat. A duergar patrol blocks an old mining bridge and demands proof of extraction rights before the weapons come out."
+}

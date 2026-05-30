@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "h": "umber_hulk_mm",
+      "c": "1"
+    }
+  ],
+  "sources": [
+    "MM"
+  ],
+  "playersSimple": [
+    {
+      "count": 4,
+      "level": 9,
+      "extraCols": []
+    }
+  ],
+  "colsExtraAdvanced": [],
+  "isAdvanced": false,
+  "name": "Shyverey Underdark 08 - Wrong Knocking in the Stone",
+  "description": "Mid combat. The umber hulk is already wounded and fleeing something deeper; start it at roughly 60% hit points."
+}

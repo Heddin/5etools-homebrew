@@ -54,3 +54,38 @@ Then add them manually into Encounter Builder.
 These are NOT player builds.
 
 They are custom encounter monsters designed to emulate a coordinated anti-hero inquisitorial strike team.
+
+---
+
+## Shyverey – Underdark Expedition
+
+A low/mid Underdark package for the chardalyn expedition with T'ha, Tena, Bro Kar'Ku-Sha, and Shael'Vir Tarren.
+
+Includes:
+
+- Shael'Vir Tarren, drow agent of the Circle of Signs
+- d8 low/mid Underdark random encounter table
+- 8 quick Encounter Builder JSON files
+- Session notes for running the encounters
+
+### Import into 5e.tools
+
+Open:
+
+Utilities → Homebrew Manager → Import from URL
+
+Use this raw file URL:
+
+https://raw.githubusercontent.com/Heddin/5etools-homebrew/main/homebrew/shiverey-underdark-bestiary.json
+
+After importing, Shael appears in Bestiary under source:
+
+SHIVUD / ShivUD
+
+Search:
+
+- Shael'Vir Tarren
+- Shyverey Underdark Low/Mid Random Encounters
+
+The encounter-builder quick starts are in `encounters/shiverey-underdark-*.json`.
+

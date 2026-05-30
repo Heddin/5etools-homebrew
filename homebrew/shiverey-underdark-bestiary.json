@@ -1,0 +1,303 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "SHIVUD",
+        "abbreviation": "ShivUD",
+        "full": "Shyverey: Underdark Expedition",
+        "authors": [
+          "Heddin",
+          "ChatGPT"
+        ],
+        "convertedBy": [
+          "ChatGPT"
+        ],
+        "version": "1.0.0"
+      }
+    ],
+    "dateAdded": 20260530,
+    "dateLastModified": 20260530
+  },
+  "monster": [
+    {
+      "name": "Shael'Vir Tarren",
+      "source": "SHIVUD",
+      "page": 1,
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "elf",
+          "drow"
+        ]
+      },
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 16,
+          "from": [
+            "studded leather armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 78,
+        "formula": "12d8 + 24"
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30
+      },
+      "str": 10,
+      "dex": 18,
+      "con": 14,
+      "int": 16,
+      "wis": 14,
+      "cha": 15,
+      "save": {
+        "dex": "+8",
+        "int": "+7",
+        "wis": "+6"
+      },
+      "skill": {
+        "acrobatics": "+8",
+        "deception": "+6",
+        "insight": "+6",
+        "investigation": "+7",
+        "perception": "+6",
+        "stealth": "+12",
+        "survival": "+6"
+      },
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "passive": 16,
+      "languages": [
+        "Common",
+        "Elvish",
+        "Undercommon",
+        "Drow Sign",
+        "Circle signs"
+      ],
+      "cr": "5",
+      "trait": [
+        {
+          "name": "Fey Ancestry",
+          "entries": [
+            "Shael has advantage on saving throws against being charmed, and magic can't put her to sleep."
+          ]
+        },
+        {
+          "name": "Sunlight Sensitivity",
+          "entries": [
+            "While in sunlight, Shael has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+          ]
+        },
+        {
+          "name": "Cunning Action",
+          "entries": [
+            "On each of her turns, Shael can take the Dash, Disengage, or Hide action as a bonus action."
+          ]
+        },
+        {
+          "name": "Evasion",
+          "entries": [
+            "If Shael is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, she instead takes no damage if she succeeds on the saving throw, and only half damage if she fails."
+          ]
+        },
+        {
+          "name": "Sneak Attack (1/Turn)",
+          "entries": [
+            "Shael deals an extra 17 ({@dice 5d6}) damage when she hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Shael that isn't incapacitated and Shael doesn't have disadvantage on the attack roll."
+          ]
+        },
+        {
+          "name": "Agent of the Circle (1/Short Rest)",
+          "entries": [
+            "For 1 minute, Shael reads the route through the Underdark and signals safe angles of movement. Shael and allies of her choice within 30 feet can add {@dice 1d4} to Dexterity ({@skill Stealth}) or Wisdom ({@skill Survival}) checks made in underground terrain."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "type": "spellcasting",
+          "ability": "cha",
+          "headerEntries": [
+            "Shael's innate spellcasting ability is Charisma (spell save DC 14; {@hit 6} to hit with spell attacks). She can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell dancing lights}",
+            "{@spell minor illusion}"
+          ],
+          "daily": {
+            "1e": [
+              "{@spell detect magic}",
+              "{@spell faerie fire}",
+              "{@spell darkness}",
+              "{@spell invisibility}"
+            ],
+            "2e": [
+              "{@spell misty step}"
+            ]
+          }
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Shael makes two attacks: one with her Thinblade and one with her Dagger or Hand Crossbow. She can apply Sneak Attack only once on her turn."
+          ]
+        },
+        {
+          "name": "Thinblade",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@dice 1d8 + 4}) piercing damage plus 3 ({@dice 1d6}) poison damage."
+          ]
+        },
+        {
+          "name": "Dagger",
+          "entries": [
+            "{@atk mw,rw} {@hit 8} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@dice 1d4 + 4}) piercing damage."
+          ]
+        },
+        {
+          "name": "Hand Crossbow",
+          "entries": [
+            "{@atk rw} {@hit 8} to hit, range 30/120 ft., one target. {@h}7 ({@dice 1d6 + 4}) piercing damage plus 3 ({@dice 1d6}) poison damage. The target must succeed on a DC 14 Constitution saving throw or be {@condition poisoned} until the end of its next turn."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Uncanny Dodge",
+          "entries": [
+            "Shael halves the damage that she takes from an attack that hits her. Shael must be able to see the attacker."
+          ]
+        },
+        {
+          "name": "Knife in the Angle",
+          "entries": [
+            "When a creature within 5 feet of Shael misses her with a melee attack, Shael moves up to 10 feet without provoking opportunity attacks and makes one Dagger attack against that creature."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Fey Ancestry",
+        "Sunlight Sensitivity"
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "languageTags": [
+        "C",
+        "E",
+        "U"
+      ],
+      "damageTags": [
+        "P",
+        "I"
+      ],
+      "conditionInflict": [
+        "poisoned"
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "environment": [
+        "underdark"
+      ],
+      "fluff": {
+        "entries": [
+          "Shael'Vir Tarren is a drow agent of the Circle of Signs operating out of the Underdark. She accompanies T'ha, Tena, and Bro Kar'Ku-Sha as a guide, broker, and field operative during the chardalyn expedition. In play, use her to open routes, signal dangers, and support the party without stealing the spotlight.",
+          "Shael knows which tunnels are roads, which are borders, and which are old lies with footprints. She treats every negotiation as a map and every map as a possible ambush."
+        ]
+      },
+      "bonus": [
+        {
+          "name": "Shadow Step {@recharge 4}",
+          "entries": [
+            "While in dim light or darkness, Shael teleports up to 30 feet to an unoccupied space she can see that is also in dim light or darkness. The next weapon attack she makes before the end of the turn has advantage."
+          ]
+        },
+        {
+          "name": "Silent Command (3/Day)",
+          "entries": [
+            "Shael chooses one ally within 30 feet that can see her. Before the start of Shael's next turn, that ally can add {@dice 1d6} to one attack roll, Dexterity ({@skill Stealth}) check, or Dexterity saving throw."
+          ]
+        }
+      ]
+    }
+  ],
+  "table": [
+    {
+      "name": "Shyverey Underdark Low/Mid Random Encounters",
+      "source": "SHIVUD",
+      "page": 2,
+      "colLabels": [
+        "d8",
+        "Encounter",
+        "Composition",
+        "Hook or Complication"
+      ],
+      "rows": [
+        [
+          "1",
+          "Veil of Darkmantles",
+          "4-6 {@creature darkmantle|MM}",
+          "Creatures hang like stalactites above a light-bearing character; a dwarven mine token lies among old bones."
+        ],
+        [
+          "2",
+          "Ringing Scree Vein",
+          "1 {@creature grick|MM} + 4-6 {@creature piercer|MM}",
+          "Loud sounds trigger a small cave-in: DC 13 Dexterity save or 2d6 bludgeoning damage."
+        ],
+        [
+          "3",
+          "Duergar Appraisal Patrol",
+          "3 {@creature duergar|MM} + 1 veteran/stone-guard style duergar",
+          "They ask who owns the vein before they draw weapons. Shael can grant advantage on one deception/intimidation approach."
+        ],
+        [
+          "4",
+          "Kuo-toa Shrine Post",
+          "6 {@creature kuo-toa|MM} + 1 {@creature kuo-toa whip|MM}",
+          "The kuo-toa believe chardalyn chips are divine spawn; a convincing omen can bypass the fight."
+        ],
+        [
+          "5",
+          "Blind Hunters in an Echo Tunnel",
+          "8 {@creature grimlock|MM}",
+          "Noise matters more than light. A stealthy route can avoid the encounter entirely."
+        ],
+        [
+          "6",
+          "Hook Horror Creche",
+          "2 {@creature hook horror|MM}",
+          "They defend a nest rather than hunt. Animal Handling or Nature can turn the fight into a detour."
+        ],
+        [
+          "7",
+          "Watchful Fungus",
+          "4 {@creature violet fungus|MM} + 2 spore-servant-style bodies",
+          "The fungus reacts to blood and heat. A safe path leads to a ventilation shaft shortcut."
+        ],
+        [
+          "8",
+          "Wrong Knocking in the Stone",
+          "1 wounded {@creature umber hulk|MM}",
+          "The umber hulk is fleeing something deeper. Start it at 60% hit points for a mid encounter."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "h": "kuo-toa_mm",
+      "c": "6"
+    },
+    {
+      "h": "kuo-toa_whip_mm",
+      "c": "1"
+    }
+  ],
+  "sources": [
+    "MM"
+  ],
+  "playersSimple": [
+    {
+      "count": 4,
+      "level": 9,
+      "extraCols": []
+    }
+  ],
+  "colsExtraAdvanced": [],
+  "isAdvanced": false,
+  "name": "Shyverey Underdark 04 - Kuo-toa Shrine Post",
+  "description": "Low/mid combat or social bypass. Kuo-toa believe chardalyn chips are divine spawn; Performance or Religion DC 15 can turn theft into prophecy."
+}

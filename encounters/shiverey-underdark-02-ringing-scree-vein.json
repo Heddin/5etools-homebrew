@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "h": "grick_mm",
+      "c": "1"
+    },
+    {
+      "h": "piercer_mm",
+      "c": "5"
+    }
+  ],
+  "sources": [
+    "MM"
+  ],
+  "playersSimple": [
+    {
+      "count": 4,
+      "level": 9,
+      "extraCols": []
+    }
+  ],
+  "colsExtraAdvanced": [],
+  "isAdvanced": false,
+  "name": "Shyverey Underdark 02 - Ringing Scree Vein",
+  "description": "Low/mid combat plus hazard. Loud sounds or thunder effects trigger a small cave-in: DC 13 Dexterity save or 2d6 bludgeoning damage."
+}

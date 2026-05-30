@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "h": "darkmantle_mm",
+      "c": "5"
+    }
+  ],
+  "sources": [
+    "MM"
+  ],
+  "playersSimple": [
+    {
+      "count": 4,
+      "level": 9,
+      "extraCols": []
+    }
+  ],
+  "colsExtraAdvanced": [],
+  "isAdvanced": false,
+  "name": "Shyverey Underdark 01 - Veil of Darkmantles",
+  "description": "Low combat. Darkmantles hang like suspiciously regular stalactites above a light-bearing character. A dwarven mine token lies among old bones."
+}
