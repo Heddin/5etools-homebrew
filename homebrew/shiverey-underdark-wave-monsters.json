@@ -1,0 +1,259 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "SHIVUDM",
+        "abbreviation": "ShivUDM",
+        "full": "Shyverey: Underdark Wave Monsters",
+        "authors": ["Heddin", "ChatGPT"],
+        "convertedBy": ["ChatGPT"],
+        "version": "1.0.0"
+      }
+    ],
+    "dateAdded": 20260611,
+    "dateLastModified": 20260611
+  },
+  "monster": [
+    {
+      "name": "Echo-Hunter Grimlock",
+      "source": "SHIVUDM",
+      "page": 1,
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["grimlock"]},
+      "alignment": ["N", "E"],
+      "ac": [12],
+      "hp": {"average": 18, "formula": "4d8"},
+      "speed": {"walk": 30},
+      "str": 16,
+      "dex": 12,
+      "con": 14,
+      "int": 9,
+      "wis": 10,
+      "cha": 6,
+      "skill": {"athletics": "+5", "perception": "+4", "stealth": "+3"},
+      "senses": ["blindsight 30 ft. or 10 ft. while deafened (blind beyond this radius)"],
+      "passive": 14,
+      "languages": ["Undercommon"],
+      "cr": "1/2",
+      "trait": [
+        {"name": "Blind Senses", "entries": ["The grimlock can't use its blindsight while deafened and is immune to effects that rely on sight."]},
+        {"name": "Keen Hearing and Smell", "entries": ["The grimlock has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."]},
+        {"name": "Echo Pack", "entries": ["The grimlock has advantage on an attack roll against a creature if at least one of the grimlock's allies is within 5 feet of the creature and the ally isn't incapacitated."]}
+      ],
+      "action": [
+        {"name": "Spiked Club", "entries": ["{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage."]},
+        {"name": "Raking Rush", "entries": ["The grimlock moves up to half its speed without provoking opportunity attacks from creatures adjacent to one of the grimlock's allies, then makes one Spiked Club attack."]}
+      ],
+      "environment": ["underdark"]
+    },
+    {
+      "name": "Veil Darkmantle",
+      "source": "SHIVUDM",
+      "page": 2,
+      "size": ["S"],
+      "type": "monstrosity",
+      "alignment": ["U"],
+      "ac": [12],
+      "hp": {"average": 30, "formula": "4d6 + 16"},
+      "speed": {"walk": 10, "fly": 30},
+      "str": 16,
+      "dex": 12,
+      "con": 18,
+      "int": 2,
+      "wis": 10,
+      "cha": 5,
+      "skill": {"stealth": "+5"},
+      "senses": ["blindsight 60 ft."],
+      "passive": 10,
+      "languages": [],
+      "cr": "1",
+      "trait": [
+        {"name": "Echolocation", "entries": ["The darkmantle can't use its blindsight while deafened."]},
+        {"name": "False Appearance", "entries": ["While the darkmantle remains motionless, it is indistinguishable from a cave formation."]}
+      ],
+      "action": [
+        {"name": "Crush", "entries": ["{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}8 ({@damage 1d10 + 3}) bludgeoning damage, and the darkmantle attaches to the target. While attached, the target is {@condition blinded}, and the darkmantle can't attack another target. The attached target can use its action to make a DC 13 Strength check, detaching the darkmantle on a success."]},
+        {"name": "Darkness Aura (1/Day)", "entries": ["A 15-foot radius of magical darkness extends from the darkmantle, moves with it, and spreads around corners. The darkness lasts for 1 minute, until the darkmantle is incapacitated, or until the darkmantle dismisses it as a bonus action."]}
+      ],
+      "environment": ["underdark"]
+    },
+    {
+      "name": "Deep Hook Horror",
+      "source": "SHIVUDM",
+      "page": 3,
+      "size": ["L"],
+      "type": "monstrosity",
+      "alignment": ["N"],
+      "ac": [16],
+      "hp": {"average": 85, "formula": "10d10 + 30"},
+      "speed": {"walk": 30, "climb": 30},
+      "str": 19,
+      "dex": 10,
+      "con": 16,
+      "int": 6,
+      "wis": 12,
+      "cha": 7,
+      "skill": {"athletics": "+7", "perception": "+4"},
+      "senses": ["blindsight 60 ft."],
+      "passive": 14,
+      "languages": ["Hook Horror"],
+      "cr": "4",
+      "trait": [
+        {"name": "Echolocation", "entries": ["The hook horror can't use its blindsight while deafened."]},
+        {"name": "Keen Hearing", "entries": ["The hook horror has advantage on Wisdom ({@skill Perception}) checks that rely on hearing."]},
+        {"name": "Siege Climber", "entries": ["The hook horror can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."]}
+      ],
+      "action": [
+        {"name": "Multiattack", "entries": ["The hook horror makes two Hook attacks."]},
+        {"name": "Hook", "entries": ["{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d8 + 3}) piercing damage."]},
+        {"name": "Linebreaker {@recharge 5}", "entries": ["The hook horror moves up to its speed in a straight line. Each Medium or smaller creature whose space it enters must succeed on a DC 15 Strength saving throw or take 13 ({@damage 2d8 + 4}) bludgeoning damage, be pushed 10 feet, and fall {@condition prone}. On a success, the creature takes half damage and isn't pushed or knocked prone."]}
+      ],
+      "environment": ["underdark"]
+    },
+    {
+      "name": "Chasm Cave Fisher",
+      "source": "SHIVUDM",
+      "page": 4,
+      "size": ["M"],
+      "type": "monstrosity",
+      "alignment": ["U"],
+      "ac": [16],
+      "hp": {"average": 65, "formula": "10d8 + 20"},
+      "speed": {"walk": 20, "climb": 20},
+      "str": 16,
+      "dex": 13,
+      "con": 14,
+      "int": 3,
+      "wis": 10,
+      "cha": 3,
+      "skill": {"perception": "+3", "stealth": "+5"},
+      "senses": ["darkvision 60 ft."],
+      "passive": 13,
+      "languages": [],
+      "cr": "3",
+      "trait": [
+        {"name": "Spider Climb", "entries": ["The cave fisher can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."]},
+        {"name": "Adhesive Filament", "entries": ["A creature grappled by the cave fisher's Filament is also {@condition restrained}. The filament has AC 15 and 10 hit points and is immune to poison and psychic damage."]}
+      ],
+      "action": [
+        {"name": "Multiattack", "entries": ["The cave fisher makes two attacks: one with its Claw and one with its Filament, if available."]},
+        {"name": "Claw", "entries": ["{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage."]},
+        {"name": "Filament", "entries": ["{@atk rw} {@hit 5} to hit, range 60 ft., one Large or smaller creature. The target is {@condition grappled} (escape DC 13). Until the grapple ends, the target is pulled up to 20 feet toward the cave fisher at the start of each of the cave fisher's turns."]},
+        {"name": "Reel", "entries": ["The cave fisher pulls one creature grappled by its Filament up to 30 feet toward itself."]}
+      ],
+      "environment": ["underdark"]
+    },
+    {
+      "name": "Wall-Breaker Umber Hulk",
+      "source": "SHIVUDM",
+      "page": 5,
+      "size": ["L"],
+      "type": "monstrosity",
+      "alignment": ["C", "E"],
+      "ac": [18],
+      "hp": {"average": 105, "formula": "10d10 + 50"},
+      "speed": {"walk": 30, "burrow": 20},
+      "str": 21,
+      "dex": 13,
+      "con": 20,
+      "int": 9,
+      "wis": 10,
+      "cha": 10,
+      "senses": ["darkvision 120 ft.", "tremorsense 60 ft."],
+      "passive": 10,
+      "languages": ["Umber Hulk"],
+      "cr": "6",
+      "trait": [
+        {"name": "Confusing Gaze", "entries": ["When a creature starts its turn within 30 feet of the umber hulk and can see its eyes, the umber hulk can force it to make a DC 15 Charisma saving throw. On a failed save, the creature can't take reactions until the start of its next turn and rolls a d8 to determine its behavior: 1-4, it does nothing; 5-6, it moves up to half its speed in a random direction; 7-8, it makes one melee attack against a random creature within reach."]},
+        {"name": "Tunneler", "entries": ["The umber hulk can burrow through solid rock at half its burrow speed and leaves a 5-foot-wide tunnel in its wake."]}
+      ],
+      "action": [
+        {"name": "Multiattack", "entries": ["The umber hulk makes three attacks: two with its Claws and one with its Mandibles."]},
+        {"name": "Claw", "entries": ["{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) slashing damage."]},
+        {"name": "Mandibles", "entries": ["{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) slashing damage."]},
+        {"name": "Breach the Wall {@recharge 5}", "entries": ["The umber hulk erupts from stone at a point it can reach with its burrow speed. Each creature within 10 feet of that point must make a DC 16 Dexterity saving throw, taking 22 ({@damage 4d10}) bludgeoning damage and falling {@condition prone} on a failed save, or half as much damage on a successful one."]}
+      ],
+      "environment": ["underdark"]
+    },
+    {
+      "name": "Ceiling Chitine",
+      "source": "SHIVUDM",
+      "page": 6,
+      "size": ["S"],
+      "type": {"type": "monstrosity", "tags": ["chitine"]},
+      "alignment": ["C", "E"],
+      "ac": [14],
+      "hp": {"average": 27, "formula": "6d6 + 6"},
+      "speed": {"walk": 30, "climb": 30},
+      "str": 10,
+      "dex": 16,
+      "con": 12,
+      "int": 10,
+      "wis": 12,
+      "cha": 7,
+      "skill": {"acrobatics": "+5", "stealth": "+7"},
+      "senses": ["darkvision 60 ft."],
+      "passive": 11,
+      "languages": ["Undercommon"],
+      "cr": "1",
+      "trait": [
+        {"name": "Spider Climb", "entries": ["The chitine can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."]},
+        {"name": "Web Walker", "entries": ["The chitine ignores movement restrictions caused by webbing."]}
+      ],
+      "action": [
+        {"name": "Multiattack", "entries": ["The chitine makes three Dagger attacks."]},
+        {"name": "Dagger", "entries": ["{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."]},
+        {"name": "Web Snare {@recharge 5}", "entries": ["{@atk rw} {@hit 5} to hit, range 30/60 ft., one Large or smaller creature. The target is {@condition restrained} by webbing. As an action, the restrained target can make a DC 13 Strength check, escaping on a success. The webbing can also be attacked and destroyed (AC 10; 10 hit points; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)."]}
+      ],
+      "environment": ["underdark"]
+    },
+    {
+      "name": "Deep Grick Alpha",
+      "source": "SHIVUDM",
+      "page": 7,
+      "size": ["L"],
+      "type": "monstrosity",
+      "alignment": ["N"],
+      "ac": [18],
+      "hp": {"average": 96, "formula": "11d10 + 33"},
+      "speed": {"walk": 30, "climb": 30},
+      "str": 18,
+      "dex": 14,
+      "con": 17,
+      "int": 4,
+      "wis": 14,
+      "cha": 9,
+      "skill": {"stealth": "+6"},
+      "senses": ["darkvision 60 ft."],
+      "passive": 12,
+      "languages": [],
+      "cr": "6",
+      "resist": ["bludgeoning, piercing, and slashing from nonmagical attacks"],
+      "trait": [
+        {"name": "Stone Camouflage", "entries": ["The grick has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."]},
+        {"name": "Predatory Momentum", "entries": ["When the grick reduces a creature to 0 hit points or scores a critical hit, it can move up to half its speed and make one Tentacles attack as a bonus action."]}
+      ],
+      "action": [
+        {"name": "Multiattack", "entries": ["The grick makes three attacks: two with its Tentacles and one with its Beak."]},
+        {"name": "Tentacles", "entries": ["{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage, and the target is {@condition grappled} (escape DC 15) if it is Large or smaller."]},
+        {"name": "Beak", "entries": ["{@atk mw} {@hit 7} to hit, reach 5 ft., one target grappled by the grick. {@h}17 ({@damage 3d8 + 4}) piercing damage."]},
+        {"name": "Tunnel Lunge {@recharge 5}", "entries": ["The grick moves up to its speed without provoking opportunity attacks, squeezing through spaces as though it were Medium. At the end of this movement, it makes one Tentacles attack against each of up to two creatures within reach."]}
+      ],
+      "environment": ["underdark"]
+    }
+  ],
+  "table": [
+    {
+      "name": "Underdark Platform Custom Waves",
+      "source": "SHIVUDM",
+      "page": 8,
+      "colLabels": ["Wave", "Composition", "Purpose"],
+      "rows": [
+        ["1", "6 Veil Darkmantles + 10 Echo-Hunter Grimlocks", "Extinguish light, surround, and split the three groups."],
+        ["2", "3 Deep Hook Horrors + 8 Echo-Hunter Grimlocks + 2 Chasm Cave Fishers", "Break the line and drag defenders out of position."],
+        ["3", "1 Wall-Breaker Umber Hulk + 2 Deep Hook Horrors + 4 Ceiling Chitines", "Open a new breach and attack from wall and ceiling at once."],
+        ["Final", "1 Deep Grick Alpha + 6 Echo-Hunter Grimlocks", "Signal that the horde cannot be fully cleared; the parties must continue forward."]
+      ]
+    }
+  ]
+}
