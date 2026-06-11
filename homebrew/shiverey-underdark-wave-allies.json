@@ -1,0 +1,209 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "SHIVUDW",
+        "abbreviation": "ShivUDW",
+        "full": "Shyverey: Underdark Wave Allies",
+        "authors": ["Heddin", "ChatGPT"],
+        "convertedBy": ["ChatGPT"],
+        "version": "1.0.0"
+      }
+    ],
+    "dateAdded": 20260611,
+    "dateLastModified": 20260611
+  },
+  "monster": [
+    {
+      "name": "Shael'Vir Tarren, Circle Pathfinder",
+      "source": "SHIVUDW",
+      "page": 1,
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["elf", "drow", "rogue"]},
+      "alignment": ["N"],
+      "ac": [{"ac": 17, "from": ["studded leather armor"]}],
+      "hp": {"average": 88, "formula": "16d8 + 16"},
+      "speed": {"walk": 30, "climb": 30},
+      "str": 10,
+      "dex": 18,
+      "con": 14,
+      "int": 16,
+      "wis": 14,
+      "cha": 12,
+      "save": {"dex": "+8", "int": "+7", "wis": "+6"},
+      "skill": {"acrobatics": "+8", "investigation": "+7", "perception": "+6", "stealth": "+12", "survival": "+6"},
+      "senses": ["darkvision 120 ft."],
+      "passive": 16,
+      "languages": ["Common", "Elvish", "Undercommon", "Drow Sign", "Circle signs"],
+      "cr": "6",
+      "trait": [
+        {"name": "Fey Ancestry", "entries": ["Shael has advantage on saving throws against being charmed, and magic can't put her to sleep."]},
+        {"name": "Cunning Action", "entries": ["On each of her turns, Shael can take the Dash, Disengage, or Hide action as a bonus action."]},
+        {"name": "Evasion", "entries": ["If Shael is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, she instead takes no damage if she succeeds on the saving throw, and only half damage if she fails."]},
+        {"name": "Underdark Guide", "entries": ["Shael and allies of her choice within 30 feet ignore nonmagical difficult terrain caused by stone, rubble, fungi, and webs."]},
+        {"name": "Exploit Opening (1/Turn)", "entries": ["Shael deals an extra 14 ({@damage 4d6}) damage when she hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Shael that isn't incapacitated and Shael doesn't have disadvantage on the attack roll."]}
+      ],
+      "action": [
+        {"name": "Multiattack", "entries": ["Shael makes two Drow Blade or Hand Crossbow attacks. She can apply Exploit Opening only once on her turn."]},
+        {"name": "Drow Blade", "entries": ["{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage plus 7 ({@damage 2d6}) poison damage."]},
+        {"name": "Hand Crossbow", "entries": ["{@atk rw} {@hit 8} to hit, range 30/120 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage. The target must succeed on a DC 15 Constitution saving throw or be {@condition poisoned} until the end of its next turn."]},
+        {"name": "Shadow Snare {@recharge 5}", "entries": ["Shael throws a compact arcane device at a point she can see within 60 feet. Each hostile creature in a 15-foot-radius sphere centered on that point must succeed on a DC 15 Dexterity saving throw or be {@condition restrained} until the end of its next turn. The area is difficult terrain until the end of Shael's next turn."]}
+      ],
+      "bonus": [
+        {"name": "Fade into Gloom (3/Day)", "entries": ["While in dim light or darkness, Shael teleports up to 30 feet to an unoccupied space she can see that is also in dim light or darkness, then takes the Hide action."]}
+      ],
+      "reaction": [
+        {"name": "Cover the Advance", "entries": ["When an ally Shael can see within 30 feet would provoke an opportunity attack, Shael makes one Hand Crossbow attack against the attacker. On a hit, that opportunity attack is made with disadvantage."]}
+      ],
+      "environment": ["underdark"],
+      "fluff": {"entries": ["Shael'Vir Tarren is the Circle of Signs' field pathfinder for the expedition. She is built as a mobile support skirmisher who opens lanes and protects the player characters rather than replacing them."]}
+    },
+    {
+      "name": "Garrok Stone-Shoulder",
+      "source": "SHIVUDW",
+      "page": 2,
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["goliath", "barbarian"]},
+      "alignment": ["N", "G"],
+      "ac": [16],
+      "hp": {"average": 126, "formula": "12d12 + 48"},
+      "speed": {"walk": 40},
+      "str": 20,
+      "dex": 14,
+      "con": 18,
+      "int": 9,
+      "wis": 12,
+      "cha": 11,
+      "save": {"str": "+9", "con": "+8"},
+      "skill": {"athletics": "+9", "intimidation": "+4", "perception": "+5", "survival": "+5"},
+      "passive": 15,
+      "languages": ["Common", "Giant"],
+      "cr": "6",
+      "trait": [
+        {"name": "Rage (3/Day)", "entries": ["As a bonus action, Garrok enters a rage for 1 minute. While raging, he has advantage on Strength checks and Strength saving throws, has resistance to bludgeoning, piercing, and slashing damage, and deals 3 extra damage with Strength-based melee weapon attacks."]},
+        {"name": "Reckless", "entries": ["At the start of his turn, Garrok can gain advantage on all melee weapon attack rolls using Strength during that turn, but attack rolls against him have advantage until the start of his next turn."]},
+        {"name": "Hold the Line", "entries": ["A hostile creature provokes an opportunity attack from Garrok when it enters his reach. If the attack hits, the creature's speed becomes 0 for the rest of the turn."]}
+      ],
+      "action": [
+        {"name": "Multiattack", "entries": ["Garrok makes two Greataxe attacks."]},
+        {"name": "Greataxe", "entries": ["{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d12 + 5}) slashing damage, or 14 ({@damage 1d12 + 8}) slashing damage while raging."]},
+        {"name": "Sweeping Cleave {@recharge 5}", "entries": ["Each hostile creature of Garrok's choice within 10 feet must make a DC 17 Dexterity saving throw, taking 18 ({@damage 4d6 + 4}) slashing damage and falling {@condition prone} on a failed save, or half as much damage on a successful one."]}
+      ],
+      "bonus": [
+        {"name": "Driving Shove", "entries": ["Immediately after Garrok hits a Large or smaller creature with a melee weapon attack, he can force it to make a DC 17 Strength saving throw. On a failure, he pushes it up to 10 feet away from him."]}
+      ],
+      "reaction": [
+        {"name": "Stone's Endurance (3/Day)", "entries": ["When Garrok takes damage, he reduces the damage by 10 ({@dice 1d12 + 4})."]}
+      ],
+      "environment": ["mountain", "underdark"],
+      "fluff": {"entries": ["Garrok is the anchor of his expedition team, a broad-shouldered goliath who treats every collapsing battle line as a personal insult."]}
+    },
+    {
+      "name": "Edran Vael, Staff Arcanist",
+      "source": "SHIVUDW",
+      "page": 3,
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["human", "wizard"]},
+      "alignment": ["N"],
+      "ac": [{"ac": 15, "from": ["mage armor", "arcane staff"]}],
+      "hp": {"average": 78, "formula": "12d8 + 24"},
+      "speed": {"walk": 30},
+      "str": 9,
+      "dex": 14,
+      "con": 16,
+      "int": 19,
+      "wis": 14,
+      "cha": 12,
+      "save": {"int": "+8", "wis": "+6"},
+      "skill": {"arcana": "+8", "history": "+8", "investigation": "+8", "perception": "+6"},
+      "passive": 16,
+      "languages": ["Common", "Elvish", "Dwarvish", "Undercommon"],
+      "cr": "6",
+      "trait": [
+        {"name": "Arcane Staff", "entries": ["While Edran holds his staff, his AC includes a +1 bonus and he has advantage on Constitution saving throws made to maintain concentration."]}
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "type": "spellcasting",
+          "ability": "int",
+          "headerEntries": ["Edran is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 16; {@hit 8} to hit with spell attacks). His staff is his spellcasting focus."],
+          "will": ["{@spell fire bolt}", "{@spell mage hand}", "{@spell minor illusion}", "{@spell ray of frost}"],
+          "daily": {
+            "1e": ["{@spell dimension door}", "{@spell wall of fire}"],
+            "2e": ["{@spell counterspell}", "{@spell lightning bolt}", "{@spell slow}"],
+            "3e": ["{@spell magic missile}", "{@spell misty step}", "{@spell shield}"]
+          }
+        }
+      ],
+      "action": [
+        {"name": "Arcane Staff", "entries": ["{@atk ms} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) force damage."]},
+        {"name": "Force Burst", "entries": ["{@atk rs} {@hit 8} to hit, range 120 ft., one target. {@h}14 ({@damage 3d6 + 4}) force damage."]},
+        {"name": "Concussive Wave {@recharge 5}", "entries": ["Each creature in a 30-foot cone must make a DC 16 Strength saving throw. On a failed save, a creature takes 22 ({@damage 4d8 + 4}) force damage, is pushed 15 feet away from Edran, and falls {@condition prone}. On a successful save, it takes half as much damage and suffers no other effect."]}
+      ],
+      "reaction": [
+        {"name": "Arcane Deflection (3/Day)", "entries": ["When Edran or a creature he can see within 30 feet is hit by an attack, Edran adds 3 to the target's AC against that attack, potentially causing it to miss."]}
+      ],
+      "environment": ["underdark"],
+      "fluff": {"entries": ["Edran fights with a rune-cut staff and favors battlefield control over spectacle. His magic is tuned to keep corridors open and enemies away from the expedition's vulnerable center."]}
+    },
+    {
+      "name": "Liarel Shadowstep",
+      "source": "SHIVUDW",
+      "page": 4,
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["elf", "rogue"]},
+      "alignment": ["C", "G"],
+      "ac": [{"ac": 17, "from": ["studded leather armor"]}],
+      "hp": {"average": 84, "formula": "13d8 + 26"},
+      "speed": {"walk": 35},
+      "str": 10,
+      "dex": 20,
+      "con": 14,
+      "int": 13,
+      "wis": 16,
+      "cha": 12,
+      "save": {"dex": "+9", "wis": "+7"},
+      "skill": {"acrobatics": "+9", "perception": "+7", "sleight of hand": "+9", "stealth": "+13"},
+      "senses": ["darkvision 60 ft."],
+      "passive": 17,
+      "languages": ["Common", "Elvish", "Thieves' cant"],
+      "cr": "6",
+      "trait": [
+        {"name": "Fey Ancestry", "entries": ["Liarel has advantage on saving throws against being charmed, and magic can't put her to sleep."]},
+        {"name": "Cunning Action", "entries": ["On each of her turns, Liarel can take the Dash, Disengage, or Hide action as a bonus action."]},
+        {"name": "Evasion", "entries": ["If Liarel is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, she instead takes no damage if she succeeds on the saving throw, and only half damage if she fails."]},
+        {"name": "Sneak Attack (1/Turn)", "entries": ["Liarel deals an extra 17 ({@damage 5d6}) damage when she hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Liarel that isn't incapacitated and Liarel doesn't have disadvantage on the attack roll."]},
+        {"name": "Skirmisher", "entries": ["After Liarel makes a ranged weapon attack, she can move up to 10 feet without provoking opportunity attacks."]}
+      ],
+      "action": [
+        {"name": "Multiattack", "entries": ["Liarel makes two Shortsword or Longbow attacks. She can apply Sneak Attack only once on her turn."]},
+        {"name": "Shortsword", "entries": ["{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage."]},
+        {"name": "Longbow", "entries": ["{@atk rw} {@hit 9} to hit, range 150/600 ft., one target. {@h}9 ({@damage 1d8 + 5}) piercing damage."]},
+        {"name": "Pinning Shot {@recharge 5}", "entries": ["{@atk rw} {@hit 9} to hit, range 150/600 ft., one Large or smaller target. {@h}9 ({@damage 1d8 + 5}) piercing damage, and the target must succeed on a DC 16 Strength saving throw or be {@condition restrained} until the end of Liarel's next turn."]}
+      ],
+      "bonus": [
+        {"name": "Mark the Weak Point (3/Day)", "entries": ["Liarel chooses one creature she can see within 90 feet. The next attack roll made by one of Liarel's allies against that creature before the start of Liarel's next turn has advantage and deals an extra 7 ({@damage 2d6}) damage on a hit."]}
+      ],
+      "reaction": [
+        {"name": "Uncanny Dodge", "entries": ["Liarel halves the damage that she takes from an attack that hits her. Liarel must be able to see the attacker."]}
+      ],
+      "environment": ["forest", "underdark"],
+      "fluff": {"entries": ["Liarel is an elven scout and knife-fighter who treats a crowded battlefield as a sequence of temporary shadows."]}
+    }
+  ],
+  "table": [
+    {
+      "name": "Underdark Platform Wave Roster",
+      "source": "SHIVUDW",
+      "page": 5,
+      "colLabels": ["Wave", "Creatures", "Purpose"],
+      "rows": [
+        ["1", "6 {@creature darkmantle|MM} + 10 {@creature grimlock|MM}", "Extinguish light and break the three groups' formation."],
+        ["2", "3 {@creature hook horror|MM} + 8 {@creature grimlock|MM} + 2 {@creature cave fisher|MPMM}", "Heavy pressure while cave fishers pull defenders out of position."],
+        ["3", "1 {@creature umber hulk|MM} + 2 {@creature hook horror|MM} + 4 {@creature chitine|MPMM}", "A wall breach and a vertical flank from the ceiling."],
+        ["Final", "1 {@creature grick alpha|MM} or 1 additional {@creature umber hulk|MM} + 6-8 surviving minor creatures", "The parties must disengage and continue deeper; reinforcements do not stop arriving."]
+      ]
+    }
+  ]
+}
