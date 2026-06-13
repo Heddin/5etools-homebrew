@@ -1,0 +1,154 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "SHIVUDS",
+        "abbreviation": "ShivUDS",
+        "full": "Shyverey: Underdark Support Allies",
+        "authors": ["Heddin", "ChatGPT"],
+        "convertedBy": ["ChatGPT"],
+        "version": "1.0.0"
+      }
+    ],
+    "dateAdded": 20260613,
+    "dateLastModified": 20260613
+  },
+  "monster": [
+    {
+      "name": "Bruni Ironjaw, Dwarf Barbarian",
+      "source": "SHIVUDS",
+      "page": 1,
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["dwarf", "barbarian"]},
+      "alignment": ["N", "G"],
+      "ac": [15],
+      "hp": {"average": 112, "formula": "15d8 + 45"},
+      "speed": {"walk": 25},
+      "str": 19, "dex": 14, "con": 17, "int": 10, "wis": 12, "cha": 11,
+      "save": {"str": "+8", "con": "+7"},
+      "skill": {"athletics": "+8", "intimidation": "+4", "perception": "+5"},
+      "senses": ["darkvision 60 ft."],
+      "passive": 15,
+      "languages": ["Common", "Dwarvish"],
+      "cr": "5",
+      "trait": [
+        {"name": "Dwarven Resilience", "entries": ["Bruni has advantage on saving throws against poison, and she has resistance to poison damage."]},
+        {"name": "Rage (3/Day)", "entries": ["As a bonus action, Bruni enters a rage for 1 minute. While raging, she has resistance to bludgeoning, piercing, and slashing damage and deals 3 extra damage with Strength-based melee weapon attacks."]},
+        {"name": "Reckless", "entries": ["At the start of her turn, Bruni can gain advantage on all melee weapon attack rolls using Strength during that turn, but attack rolls against her have advantage until the start of her next turn."]}
+      ],
+      "action": [
+        {"name": "Multiattack", "entries": ["Bruni makes two Maul attacks."]},
+        {"name": "Maul", "entries": ["{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage, or 14 ({@damage 2d6 + 7}) bludgeoning damage while raging."]},
+        {"name": "Stonebreaker Swing {@recharge 5}", "entries": ["Bruni makes one Maul attack. On a hit, the target must succeed on a DC 16 Strength saving throw or fall {@condition prone}. If the target is already prone, it takes an extra 10 ({@damage 3d6}) bludgeoning damage."]}
+      ],
+      "reaction": [
+        {"name": "Shoulder the Blow", "entries": ["When an ally within 5 feet of Bruni is hit by a melee attack, Bruni grants that ally resistance to the attack's damage."]}
+      ],
+      "environment": ["mountain", "underdark"]
+    },
+    {
+      "name": "Marcus Vey, Human Fighter",
+      "source": "SHIVUDS",
+      "page": 2,
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["human", "fighter"]},
+      "alignment": ["L", "N"],
+      "ac": [{"ac": 18, "from": ["chain mail", "shield"]}],
+      "hp": {"average": 105, "formula": "14d8 + 42"},
+      "speed": {"walk": 30},
+      "str": 18, "dex": 12, "con": 16, "int": 11, "wis": 13, "cha": 12,
+      "save": {"str": "+8", "con": "+7"},
+      "skill": {"athletics": "+8", "perception": "+5", "survival": "+5"},
+      "passive": 15,
+      "languages": ["Common"],
+      "cr": "5",
+      "trait": [
+        {"name": "Formation Fighter", "entries": ["Marcus gains a +2 bonus to AC while at least one ally is within 5 feet of him and isn't incapacitated."]},
+        {"name": "Tactical Mark", "entries": ["When Marcus hits a creature with a melee weapon attack, the target has disadvantage on the next attack roll it makes against a creature other than Marcus before the start of Marcus's next turn."]}
+      ],
+      "action": [
+        {"name": "Multiattack", "entries": ["Marcus makes three Longsword attacks."]},
+        {"name": "Longsword", "entries": ["{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage."]},
+        {"name": "Shield Rush {@recharge 5}", "entries": ["Marcus moves up to 15 feet in a straight line and makes one shield attack against a creature within 5 feet. The target must succeed on a DC 16 Strength saving throw or take 13 ({@damage 2d8 + 4}) bludgeoning damage and be pushed up to 10 feet."]}
+      ],
+      "bonus": [
+        {"name": "Second Wind (1/Day)", "entries": ["Marcus regains 16 ({@dice 1d10 + 11}) hit points."]}
+      ],
+      "reaction": [
+        {"name": "Parry", "entries": ["Marcus adds 3 to his AC against one melee attack that would hit him. To do so, Marcus must see the attacker and be wielding a melee weapon."]}
+      ],
+      "environment": ["urban", "underdark"]
+    },
+    {
+      "name": "Sister Alena, Expedition Cleric",
+      "source": "SHIVUDS",
+      "page": 3,
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["human", "cleric"]},
+      "alignment": ["N", "G"],
+      "ac": [{"ac": 17, "from": ["scale mail", "shield"]}],
+      "hp": {"average": 82, "formula": "11d8 + 33"},
+      "speed": {"walk": 30},
+      "str": 12, "dex": 12, "con": 16, "int": 11, "wis": 19, "cha": 14,
+      "save": {"wis": "+8", "cha": "+6"},
+      "skill": {"insight": "+8", "medicine": "+8", "perception": "+8", "religion": "+4"},
+      "passive": 18,
+      "languages": ["Common", "Celestial"],
+      "cr": "5",
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "type": "spellcasting",
+          "ability": "wis",
+          "headerEntries": ["Alena is a 9th-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 16; {@hit 8} to hit with spell attacks)."],
+          "will": ["{@spell guidance}", "{@spell sacred flame}", "{@spell spare the dying}"],
+          "daily": {
+            "1e": ["{@spell beacon of hope}", "{@spell revivify}", "{@spell spirit guardians}"],
+            "2e": ["{@spell bless}", "{@spell healing word}", "{@spell lesser restoration}", "{@spell spiritual weapon}"]
+          }
+        }
+      ],
+      "action": [
+        {"name": "Mace", "entries": ["{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage plus 9 ({@damage 2d8}) radiant damage."]},
+        {"name": "Radiant Rebuke", "entries": ["{@atk rs} {@hit 8} to hit, range 60 ft., one target. {@h}18 ({@damage 4d8}) radiant damage."]},
+        {"name": "Mass Healing Word (1/Day)", "entries": ["Up to six creatures of Alena's choice within 60 feet regain 11 ({@dice 1d4 + 9}) hit points."]}
+      ],
+      "reaction": [
+        {"name": "Warding Prayer (3/Day)", "entries": ["When a creature Alena can see within 30 feet fails a saving throw, Alena adds 4 ({@dice 1d8}) to the roll, potentially turning the failure into a success."]}
+      ],
+      "environment": ["underdark"]
+    },
+    {
+      "name": "Orien Flint, Expedition Ranger",
+      "source": "SHIVUDS",
+      "page": 4,
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["human", "ranger"]},
+      "alignment": ["N", "G"],
+      "ac": [{"ac": 16, "from": ["studded leather armor"]}],
+      "hp": {"average": 88, "formula": "13d8 + 26"},
+      "speed": {"walk": 35, "climb": 30},
+      "str": 12, "dex": 18, "con": 14, "int": 12, "wis": 16, "cha": 10,
+      "save": {"dex": "+8", "wis": "+7"},
+      "skill": {"athletics": "+5", "perception": "+11", "stealth": "+8", "survival": "+11"},
+      "senses": ["darkvision 60 ft."],
+      "passive": 21,
+      "languages": ["Common", "Dwarvish", "Undercommon"],
+      "cr": "5",
+      "trait": [
+        {"name": "Underdark Scout", "entries": ["Orien has advantage on Wisdom ({@skill Perception}) and Wisdom ({@skill Survival}) checks made to track creatures or detect hazards underground."]},
+        {"name": "Hunter's Mark (3/Day)", "entries": ["As a bonus action, Orien marks one creature he can see within 90 feet for 1 hour. Once on each of Orien's turns, he deals an extra 3 ({@damage 1d6}) damage to the marked target when he hits it with a weapon attack."]}
+      ],
+      "action": [
+        {"name": "Multiattack", "entries": ["Orien makes two Longbow or Shortsword attacks."]},
+        {"name": "Longbow", "entries": ["{@atk rw} {@hit 8} to hit, range 150/600 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage plus 3 ({@damage 1d6}) piercing damage if the target is marked by Orien's Hunter's Mark."]},
+        {"name": "Shortsword", "entries": ["{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 3 ({@damage 1d6}) piercing damage if the target is marked by Orien's Hunter's Mark."]},
+        {"name": "Snare Shot {@recharge 5}", "entries": ["{@atk rw} {@hit 8} to hit, range 150/600 ft., one Large or smaller target. {@h}8 ({@damage 1d8 + 4}) piercing damage, and the target must succeed on a DC 15 Strength saving throw or be {@condition restrained} until the end of Orien's next turn."]}
+      ],
+      "bonus": [
+        {"name": "Skirmish Step", "entries": ["Orien moves up to 15 feet without provoking opportunity attacks."]}
+      ],
+      "environment": ["forest", "underdark"]
+    }
+  ]
+}
